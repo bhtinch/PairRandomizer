@@ -8,7 +8,7 @@
 import Foundation
 
 class Person: Codable {
-    let name: String
+    var name: String
     let id: String
     
     init(name: String, id: String = UUID().uuidString) {

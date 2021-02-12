@@ -16,25 +16,24 @@ class PersonController {
     
     
     //  MARK: - Methods
-    func createPersonWith() {
-        
-    }
-    
-    func fetchPersons() {
-        
+    func createPersonWith(name: String) {
+        let person = Person(name: name)
+        persons.append(person)
+        saveToPersistenceStore()
     }
     
     func update(person: Person, name: String) {
-        
+        person.name = name
+        saveToPersistenceStore()
     }
     
     func delete(person: Person) {
-        
+        guard let index = persons.firstIndex(of: person) else { return }
+        persons.remove(at: index)
+        saveToPersistenceStore()
     }
     
     //  MARK: - Persistence
-    
-    //  fileURL
     func fileURL() -> URL {
         let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let fileURL = urls[0].appendingPathComponent("PersonController.json")
