@@ -14,16 +14,10 @@ class PersonController {
     
     var persons: [Person] = []
     
-    
     //  MARK: - Methods
     func createPersonWith(name: String) {
         let person = Person(name: name)
         persons.append(person)
-        saveToPersistenceStore()
-    }
-    
-    func update(person: Person, name: String) {
-        person.name = name
         saveToPersistenceStore()
     }
     

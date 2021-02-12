@@ -8,12 +8,17 @@
 import UIKit
 
 class PairListTableViewController: UITableViewController {
+    //  MARK: - Outlets
+    @IBOutlet weak var randomizeButton: UIButton!
     
     //  MARK: - Lifecyle
     override func viewDidLoad() {
         super.viewDidLoad()
         PersonController.shared.loadFromPersistenceStore()
         randomize()
+        
+        randomizeButton.layer.cornerRadius = 8
+        randomizeButton.layer.masksToBounds = true
     }
     
     //  MARK: - Actions
@@ -28,7 +33,7 @@ class PairListTableViewController: UITableViewController {
     
     //  MARK: - Properties
     var shuffled: [Person] = []
-    
+      
     //  MARK: - Methods
     func randomize(){
         shuffled = PersonController.shared.persons.shuffled()
@@ -46,7 +51,6 @@ class PairListTableViewController: UITableViewController {
             textField.autocapitalizationType = .words
         }
         
-                
         let addAction = UIAlertAction(title: "Add", style: .default) { (_) in
             
             guard let name = alertController.textFields?.first?.text, !name.isEmpty else { return }
