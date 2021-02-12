@@ -12,6 +12,8 @@
 		622AD46125D6DF2C007E3A15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 622AD45F25D6DF2C007E3A15 /* Main.storyboard */; };
 		622AD46325D6DF2D007E3A15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 622AD46225D6DF2D007E3A15 /* Assets.xcassets */; };
 		622AD46625D6DF2D007E3A15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 622AD46425D6DF2D007E3A15 /* LaunchScreen.storyboard */; };
+		62F1382625D6E5B000617682 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F1382525D6E5B000617682 /* Person.swift */; };
+		62F1382925D6E5B800617682 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F1382825D6E5B800617682 /* PersonController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		622AD46225D6DF2D007E3A15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		622AD46525D6DF2D007E3A15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		622AD46725D6DF2D007E3A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62F1382525D6E5B000617682 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		62F1382825D6E5B800617682 /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		622AD45825D6DF2C007E3A15 /* PairRandomizer */ = {
 			isa = PBXGroup;
 			children = (
+				62F1382325D6E40F00617682 /* Model */,
+				62F1382425D6E41400617682 /* Model Controller */,
 				62F1381B25D6E14400617682 /* View Controllers */,
 				62F1381825D6E12200617682 /* Views */,
 				62F1381625D6E11200617682 /* Resources */,
@@ -94,6 +100,22 @@
 			children = (
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		62F1382325D6E40F00617682 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				62F1382525D6E5B000617682 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		62F1382425D6E41400617682 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				62F1382825D6E5B800617682 /* PersonController.swift */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +188,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62F1382925D6E5B800617682 /* PersonController.swift in Sources */,
+				62F1382625D6E5B000617682 /* Person.swift in Sources */,
 				622AD45A25D6DF2C007E3A15 /* AppDelegate.swift in Sources */,
 				622AD45C25D6DF2C007E3A15 /* SceneDelegate.swift in Sources */,
 			);
@@ -316,7 +340,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QYHXM7HJ4V;
-				INFOPLIST_FILE = PairRandomizer/Info.plist;
+				INFOPLIST_FILE = PairRandomizer/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,7 +359,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QYHXM7HJ4V;
-				INFOPLIST_FILE = PairRandomizer/Info.plist;
+				INFOPLIST_FILE = PairRandomizer/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
