@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		622AD45A25D6DF2C007E3A15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AD45925D6DF2C007E3A15 /* AppDelegate.swift */; };
 		622AD45C25D6DF2C007E3A15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AD45B25D6DF2C007E3A15 /* SceneDelegate.swift */; };
-		622AD45E25D6DF2C007E3A15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AD45D25D6DF2C007E3A15 /* ViewController.swift */; };
 		622AD46125D6DF2C007E3A15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 622AD45F25D6DF2C007E3A15 /* Main.storyboard */; };
 		622AD46325D6DF2D007E3A15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 622AD46225D6DF2D007E3A15 /* Assets.xcassets */; };
 		622AD46625D6DF2D007E3A15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 622AD46425D6DF2D007E3A15 /* LaunchScreen.storyboard */; };
@@ -19,7 +18,6 @@
 		622AD45625D6DF2C007E3A15 /* PairRandomizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PairRandomizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		622AD45925D6DF2C007E3A15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		622AD45B25D6DF2C007E3A15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		622AD45D25D6DF2C007E3A15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		622AD46025D6DF2C007E3A15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		622AD46225D6DF2D007E3A15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		622AD46525D6DF2D007E3A15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +54,46 @@
 		622AD45825D6DF2C007E3A15 /* PairRandomizer */ = {
 			isa = PBXGroup;
 			children = (
-				622AD45925D6DF2C007E3A15 /* AppDelegate.swift */,
-				622AD45B25D6DF2C007E3A15 /* SceneDelegate.swift */,
-				622AD45D25D6DF2C007E3A15 /* ViewController.swift */,
-				622AD45F25D6DF2C007E3A15 /* Main.storyboard */,
-				622AD46225D6DF2D007E3A15 /* Assets.xcassets */,
-				622AD46425D6DF2D007E3A15 /* LaunchScreen.storyboard */,
-				622AD46725D6DF2D007E3A15 /* Info.plist */,
+				62F1381B25D6E14400617682 /* View Controllers */,
+				62F1381825D6E12200617682 /* Views */,
+				62F1381625D6E11200617682 /* Resources */,
 			);
 			path = PairRandomizer;
+			sourceTree = "<group>";
+		};
+		62F1381625D6E11200617682 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				622AD45925D6DF2C007E3A15 /* AppDelegate.swift */,
+				622AD45B25D6DF2C007E3A15 /* SceneDelegate.swift */,
+				622AD46225D6DF2D007E3A15 /* Assets.xcassets */,
+				622AD46725D6DF2D007E3A15 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		62F1381825D6E12200617682 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				62F1381925D6E12900617682 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		62F1381925D6E12900617682 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				622AD45F25D6DF2C007E3A15 /* Main.storyboard */,
+				622AD46425D6DF2D007E3A15 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		62F1381B25D6E14400617682 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +166,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				622AD45E25D6DF2C007E3A15 /* ViewController.swift in Sources */,
 				622AD45A25D6DF2C007E3A15 /* AppDelegate.swift in Sources */,
 				622AD45C25D6DF2C007E3A15 /* SceneDelegate.swift in Sources */,
 			);
