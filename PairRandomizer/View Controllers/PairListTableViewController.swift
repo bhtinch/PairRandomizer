@@ -75,7 +75,12 @@ class PairListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+       
+        if (shuffled.count % 2) == 1 && section == shuffled.count / 2 {
+            return 1
+        } else {
+            return 2
+        }
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -86,12 +91,7 @@ class PairListTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "personCell", for: indexPath)
         
         let index = indexPath.section * 2 + indexPath.row
-        
-        if (shuffled.count % 2) == 1 && index == shuffled.count {
-            cell.textLabel?.text = ""
-        } else {
-            cell.textLabel?.text = shuffled[index].name
-        }
+        cell.textLabel?.text = shuffled[index].name
         
         return cell
     }

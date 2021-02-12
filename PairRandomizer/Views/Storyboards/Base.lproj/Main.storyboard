@@ -20,11 +20,8 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1l-2y-ZId">
-                                    <rect key="frame" x="107" y="8" width="200" height="56"/>
+                                    <rect key="frame" x="124" y="8" width="166" height="56"/>
                                     <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="200" id="yRO-Iy-ENZ"/>
-                                    </constraints>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                     <state key="normal" title="Randomize">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -39,6 +36,7 @@
                                 <constraint firstItem="K1l-2y-ZId" firstAttribute="centerY" secondItem="3jK-Zo-Gug" secondAttribute="centerY" id="Up1-MP-ksA"/>
                                 <constraint firstItem="K1l-2y-ZId" firstAttribute="top" secondItem="3jK-Zo-Gug" secondAttribute="top" constant="8" id="WRB-gH-J6V"/>
                                 <constraint firstItem="K1l-2y-ZId" firstAttribute="centerX" secondItem="3jK-Zo-Gug" secondAttribute="centerX" id="mq0-Pv-Tdi"/>
+                                <constraint firstItem="K1l-2y-ZId" firstAttribute="width" secondItem="3jK-Zo-Gug" secondAttribute="width" multiplier="0.4" id="rS2-JZ-DLP"/>
                             </constraints>
                         </view>
                         <prototypes>
